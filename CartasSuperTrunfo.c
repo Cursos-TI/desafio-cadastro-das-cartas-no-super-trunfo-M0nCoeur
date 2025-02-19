@@ -103,6 +103,17 @@ int main() {
         printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional);
         printf("PIB per Capita: %.2f reais\n", pibPerCapita);
         printf("Super Poder: %.2f\n", superPoder);
+
+
+        // Determinando a classificação da cidade pela população
+        if (populacao < 100000) {
+            printf("Classificação: Cidade Pequena\n");
+        } else if (populacao >= 100000 && populacao <= 1000000) {
+            printf("Classificação: Cidade Média\n");
+        } else if (populacao > 1000000) {
+            printf("Classificação: Cidade Grande\n");
+        }
+
         printf("============================\n\n");
 
         // Pergunta se o jogador quer continuar cadastrando mais cartas
@@ -110,7 +121,7 @@ int main() {
         scanf(" %[^\n]", continuar);
         printf("\n");
 
-        // Incrementando o número da carta
+        // Incrementando mais um no número da carta
         numeroCarta++;
 
     } while (continuar[0] == 'S' || continuar[0] == 's'); // Continuar se a resposta for 'S' ou 's'
