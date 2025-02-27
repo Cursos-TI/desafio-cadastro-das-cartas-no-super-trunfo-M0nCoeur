@@ -1,11 +1,8 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Nível Mestre
+// Desafio Super Trunfo
 // Autor: Lucas Ferreira
 // Data: 17/02/2025
-// Comentários foram adicionados para facilitar o entendimento do código
 
 // Função para calcular o "Super Poder" de uma carta, que é uma soma dos valores das propriedades da cidade
 float calcularSuperPoder(int populacao, float area, float pib, int pontosTuristicos, float densidadePopulacional, float pibPerCapita) {
